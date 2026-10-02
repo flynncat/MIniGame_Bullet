@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DefenseConfig" format=3]
+
+[ext_resource type="Resource" path="res://config/defense/caltrop.tres" id="1_0o315"]
+[ext_resource type="Resource" path="res://config/defense/rocket.tres" id="2_b3xeb"]
+[ext_resource type="Script" path="res://scripts/config/defense_config.gd" id="3_ofipg"]
+[ext_resource type="Resource" path="res://config/defense/turret.tres" id="4_1agcp"]
+
+[resource]
+script = ExtResource("3_ofipg")
+turret = ExtResource("4_1agcp")
+rocket = ExtResource("2_b3xeb")
+caltrop = ExtResource("1_0o315")

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TurretStats" format=3 uid="uid://ddvxwkxapu3hf"]
+
+[ext_resource type="Script" uid="uid://de00x1k2nrrmh" path="res://scripts/config/turret_stats.gd" id="1_m6061"]
+
+[resource]
+script = ExtResource("1_m6061")
+display_name = "火箭炮"
+description = "发射自动追踪跑者的火箭弹，命中扣 1 点血"
+price = 300
+first_shot_delay = 1.0
+fire_interval = 2.6
+projectile_speed = 150.0
+projectile_lifetime = 6.0
+homing = true
+upgraded_price = 450
+upgrade_effects = 2

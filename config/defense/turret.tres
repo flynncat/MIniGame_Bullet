@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TurretStats" format=3 uid="uid://cd2uvmfeawstp"]
+
+[ext_resource type="Script" uid="uid://de00x1k2nrrmh" path="res://scripts/config/turret_stats.gd" id="1_xpj8k"]
+
+[resource]
+script = ExtResource("1_xpj8k")
+description = "朝安装时指定的方向发射炮弹，命中扣 1 点血"
+projectile_lifetime = 10.0
+upgrade_effects = 1

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PlayerConfig" format=3 uid="uid://jbunj7d2a1en"]
+
+[ext_resource type="Script" uid="uid://dnko3a765vlpc" path="res://scripts/config/runner_class_config.gd" id="1_dr35l"]
+[ext_resource type="Resource" path="res://config/runner_classes/class_1_bomb.tres" id="2_bsdxc"]
+[ext_resource type="Resource" path="res://config/runner_classes/class_2_engineer.tres" id="3_lkwym"]
+[ext_resource type="Resource" path="res://config/runner_classes/class_3_rocket.tres" id="4_0edic"]
+[ext_resource type="Script" uid="uid://k3odg5x0l33e" path="res://scripts/config/player_config.gd" id="5_7kx22"]
+
+[resource]
+script = ExtResource("5_7kx22")
+classes = Array[ExtResource("1_dr35l")]([ExtResource("2_bsdxc"), ExtResource("3_lkwym"), ExtResource("4_0edic")])

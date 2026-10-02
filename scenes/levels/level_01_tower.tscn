@@ -1,0 +1,407 @@
+[gd_scene format=3 uid="uid://dj8dhe2c3iwg2"]
+
+[ext_resource type="Script" uid="uid://bn277lpukef6c" path="res://scripts/level/level.gd" id="1_k7vhn"]
+[ext_resource type="Script" uid="uid://drf260rikfdk7" path="res://scripts/level/spike.gd" id="2_ubmo7"]
+[ext_resource type="Script" uid="uid://t04vqsrrooj2" path="res://scripts/level/goal.gd" id="3_h8m6c"]
+[ext_resource type="Script" uid="uid://d2rcf5222p0ew" path="res://scripts/level/coin.gd" id="4_nqc5p"]
+[ext_resource type="Script" uid="uid://ctggah5rwbdxr" path="res://scripts/level/platform.gd" id="5_dt4tu"]
+[ext_resource type="Script" uid="uid://dtsw8s7x0ie1r" path="res://scripts/level/spawn_point.gd" id="6_qc7qu"]
+
+[node name="Level" type="Node2D" unique_id=496917423]
+script = ExtResource("1_k7vhn")
+level_name = "垂直塔 · 云端登顶"
+world_size = Vector2i(960, 1000)
+
+[node name="Spikes" type="Node2D" parent="." unique_id=1048098395]
+
+[node name="Spike1" type="Area2D" parent="Spikes" unique_id=344900145]
+position = Vector2(710, 727)
+collision_layer = 16
+collision_mask = 0
+monitoring = false
+script = ExtResource("2_ubmo7")
+size = Vector2(61, 12)
+
+[node name="Spike2" type="Area2D" parent="Spikes" unique_id=979561037]
+position = Vector2(516, 546)
+collision_layer = 16
+collision_mask = 0
+monitoring = false
+script = ExtResource("2_ubmo7")
+size = Vector2(63, 12)
+
+[node name="Spike3" type="Area2D" parent="Spikes" unique_id=1693088434]
+position = Vector2(680, 299)
+collision_layer = 16
+collision_mask = 0
+monitoring = false
+script = ExtResource("2_ubmo7")
+size = Vector2(49, 12)
+
+[node name="Goal" type="Area2D" parent="." unique_id=107500302]
+position = Vector2(497, 54)
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+script = ExtResource("3_h8m6c")
+
+[node name="Coins" type="Node2D" parent="." unique_id=550010582]
+
+[node name="Coin1" type="Area2D" parent="Coins" unique_id=262801362]
+position = Vector2(517, 838)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin2" type="Area2D" parent="Coins" unique_id=1891275527]
+position = Vector2(538, 816)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin3" type="Area2D" parent="Coins" unique_id=1887529650]
+position = Vector2(558, 794)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin4" type="Area2D" parent="Coins" unique_id=1699941699]
+position = Vector2(578, 773)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin5" type="Area2D" parent="Coins" unique_id=1603284029]
+position = Vector2(784, 724)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin6" type="Area2D" parent="Coins" unique_id=1248102607]
+position = Vector2(636, 716)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin7" type="Area2D" parent="Coins" unique_id=235283077]
+position = Vector2(656, 697)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin8" type="Area2D" parent="Coins" unique_id=297756958]
+position = Vector2(675, 679)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin9" type="Area2D" parent="Coins" unique_id=79093057]
+position = Vector2(393, 651)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin10" type="Area2D" parent="Coins" unique_id=859550114]
+position = Vector2(651, 635)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin11" type="Area2D" parent="Coins" unique_id=582963986]
+position = Vector2(623, 616)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin12" type="Area2D" parent="Coins" unique_id=1338260594]
+position = Vector2(596, 598)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin13" type="Area2D" parent="Coins" unique_id=1970261651]
+position = Vector2(802, 569)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin14" type="Area2D" parent="Coins" unique_id=1064996051]
+position = Vector2(594, 532)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin15" type="Area2D" parent="Coins" unique_id=1144557104]
+position = Vector2(603, 511)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin16" type="Area2D" parent="Coins" unique_id=138489750]
+position = Vector2(612, 489)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin17" type="Area2D" parent="Coins" unique_id=2038754851]
+position = Vector2(622, 468)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin18" type="Area2D" parent="Coins" unique_id=1249909739]
+position = Vector2(790, 443)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin19" type="Area2D" parent="Coins" unique_id=868040073]
+position = Vector2(599, 404)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin20" type="Area2D" parent="Coins" unique_id=518464310]
+position = Vector2(584, 390)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin21" type="Area2D" parent="Coins" unique_id=740610001]
+position = Vector2(568, 375)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin22" type="Area2D" parent="Coins" unique_id=1153986652]
+position = Vector2(553, 360)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin23" type="Area2D" parent="Coins" unique_id=2076922665]
+position = Vector2(576, 312)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin24" type="Area2D" parent="Coins" unique_id=1660352680]
+position = Vector2(594, 300)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin25" type="Area2D" parent="Coins" unique_id=1312468180]
+position = Vector2(612, 287)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin26" type="Area2D" parent="Coins" unique_id=1618096170]
+position = Vector2(631, 275)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin27" type="Area2D" parent="Coins" unique_id=471062242]
+position = Vector2(833, 245)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin28" type="Area2D" parent="Coins" unique_id=1595639708]
+position = Vector2(592, 215)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin29" type="Area2D" parent="Coins" unique_id=741426799]
+position = Vector2(556, 184)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin30" type="Area2D" parent="Coins" unique_id=2112243164]
+position = Vector2(512, 158)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin31" type="Area2D" parent="Coins" unique_id=451700307]
+position = Vector2(346, 135)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin32" type="Area2D" parent="Coins" unique_id=1360532531]
+position = Vector2(320, 135)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin33" type="Area2D" parent="Coins" unique_id=877396476]
+position = Vector2(440, 100)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin34" type="Area2D" parent="Coins" unique_id=1813591963]
+position = Vector2(500, 100)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Coin35" type="Area2D" parent="Coins" unique_id=842803781]
+position = Vector2(560, 100)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_nqc5p")
+
+[node name="Platforms" type="Node2D" parent="." unique_id=495201862]
+
+[node name="Platform1" type="StaticBody2D" parent="Platforms" unique_id=444013664]
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(16, 1000)
+
+[node name="Platform2" type="StaticBody2D" parent="Platforms" unique_id=824170976]
+position = Vector2(944, 0)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(16, 1000)
+
+[node name="Platform3" type="StaticBody2D" parent="Platforms" unique_id=270824634]
+position = Vector2(0, 940)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(960, 60)
+
+[node name="Platform4" type="StaticBody2D" parent="Platforms" unique_id=1543071974]
+position = Vector2(479, 869)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(173, 16)
+
+[node name="Platform5" type="StaticBody2D" parent="Platforms" unique_id=89403090]
+position = Vector2(748, 801)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(114, 14)
+
+[node name="Platform6" type="StaticBody2D" parent="Platforms" unique_id=1104658851]
+position = Vector2(609, 740)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(178, 16)
+
+[node name="Platform7" type="StaticBody2D" parent="Platforms" unique_id=2119884267]
+position = Vector2(363, 685)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(76, 14)
+
+[node name="Platform8" type="StaticBody2D" parent="Platforms" unique_id=1651248108]
+position = Vector2(501, 634)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(143, 16)
+
+[node name="Platform9" type="StaticBody2D" parent="Platforms" unique_id=703155720]
+position = Vector2(763, 603)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(93, 14)
+
+[node name="Platform10" type="StaticBody2D" parent="Platforms" unique_id=993271782]
+position = Vector2(448, 557)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(158.29, 16)
+
+[node name="Platform11" type="StaticBody2D" parent="Platforms" unique_id=1453605993]
+position = Vector2(752, 477)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(92, 14)
+
+[node name="Platform12" type="StaticBody2D" parent="Platforms" unique_id=894585535]
+position = Vector2(422, 422)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(241, 16)
+
+[node name="Platform13" type="StaticBody2D" parent="Platforms" unique_id=2057347066]
+position = Vector2(574, 311)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(163, 16)
+
+[node name="Platform14" type="StaticBody2D" parent="Platforms" unique_id=1162212941]
+position = Vector2(802, 279)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(78, 14)
+kind = 1
+
+[node name="Platform15" type="StaticBody2D" parent="Platforms" unique_id=421941310]
+position = Vector2(394, 262)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(135, 16)
+
+[node name="Platform16" type="StaticBody2D" parent="Platforms" unique_id=741527275]
+position = Vector2(309, 172)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(84, 14)
+kind = 1
+
+[node name="Platform17" type="StaticBody2D" parent="Platforms" unique_id=321609194]
+position = Vector2(400, 140)
+collision_mask = 0
+script = ExtResource("5_dt4tu")
+size = Vector2(240, 18)
+
+[node name="Turrets" type="Node2D" parent="." unique_id=725810010]
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=896673572]
+position = Vector2(74, 922)
+gizmo_extents = 6.0
+script = ExtResource("6_qc7qu")

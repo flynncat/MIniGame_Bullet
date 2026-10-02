@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RunnerClassConfig" format=3]
+
+[ext_resource type="Script" path="res://scripts/config/runner_class_config.gd" id="1_hhw15"]
+
+[resource]
+script = ExtResource("1_hhw15")
+display_name = "工程师"
+color = Color(0.42352942, 0.9411765, 0.627451, 1)
+death_ability = 2
+description = "阵亡时生成一座左右巡逻平台"

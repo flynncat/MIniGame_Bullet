@@ -1,0 +1,154 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/level/level.gd" id="1_vbuh6"]
+[ext_resource type="Script" path="res://scripts/level/spike.gd" id="2_wjn3v"]
+[ext_resource type="Script" path="res://scripts/level/goal.gd" id="3_05yal"]
+[ext_resource type="Script" path="res://scripts/level/coin.gd" id="4_65kqb"]
+[ext_resource type="Script" path="res://scripts/level/platform.gd" id="5_73vlg"]
+[ext_resource type="Script" path="res://scripts/level/moving_platform.gd" id="6_ggqk7"]
+[ext_resource type="Script" path="res://scripts/level/spawn_point.gd" id="7_gy7ko"]
+
+[node name="Level" type="Node2D" unique_id=1920586447]
+script = ExtResource("1_vbuh6")
+level_name = "第1关 · 云端起步"
+world_size = Vector2i(2450, 540)
+
+[node name="Spikes" type="Node2D" parent="." unique_id=1159268297]
+
+[node name="Spike1" type="Area2D" parent="Spikes" unique_id=77961356]
+position = Vector2(420, 468)
+script = ExtResource("2_wjn3v")
+
+[node name="Goal" type="Area2D" parent="." unique_id=1135862775]
+position = Vector2(2320, 396)
+script = ExtResource("3_05yal")
+
+[node name="Coins" type="Node2D" parent="." unique_id=932904682]
+
+[node name="Coin1" type="Area2D" parent="Coins" unique_id=533102786]
+position = Vector2(300, 430)
+script = ExtResource("4_65kqb")
+
+[node name="Coin2" type="Area2D" parent="Coins" unique_id=529599121]
+position = Vector2(360, 430)
+script = ExtResource("4_65kqb")
+
+[node name="Coin3" type="Area2D" parent="Coins" unique_id=935416779]
+position = Vector2(620, 350)
+script = ExtResource("4_65kqb")
+
+[node name="Coin4" type="Area2D" parent="Coins" unique_id=1664995855]
+position = Vector2(800, 290)
+script = ExtResource("4_65kqb")
+
+[node name="Coin5" type="Area2D" parent="Coins" unique_id=185091736]
+position = Vector2(970, 270)
+script = ExtResource("4_65kqb")
+
+[node name="Coin6" type="Area2D" parent="Coins" unique_id=753489916]
+position = Vector2(1050, 270)
+script = ExtResource("4_65kqb")
+
+[node name="Coin7" type="Area2D" parent="Coins" unique_id=999280674]
+position = Vector2(1240, 350)
+script = ExtResource("4_65kqb")
+
+[node name="Coin8" type="Area2D" parent="Coins" unique_id=46750228]
+position = Vector2(1300, 350)
+script = ExtResource("4_65kqb")
+
+[node name="Coin9" type="Area2D" parent="Coins" unique_id=1651571597]
+position = Vector2(1450, 280)
+script = ExtResource("4_65kqb")
+
+[node name="Coin10" type="Area2D" parent="Coins" unique_id=2007431955]
+position = Vector2(1520, 280)
+script = ExtResource("4_65kqb")
+
+[node name="Coin11" type="Area2D" parent="Coins" unique_id=2082325354]
+position = Vector2(1640, 220)
+script = ExtResource("4_65kqb")
+
+[node name="Coin12" type="Area2D" parent="Coins" unique_id=243983661]
+position = Vector2(1800, 270)
+script = ExtResource("4_65kqb")
+
+[node name="Coin13" type="Area2D" parent="Coins" unique_id=1149223843]
+position = Vector2(1990, 350)
+script = ExtResource("4_65kqb")
+
+[node name="Coin14" type="Area2D" parent="Coins" unique_id=1015962737]
+position = Vector2(2050, 350)
+script = ExtResource("4_65kqb")
+
+[node name="Coin15" type="Area2D" parent="Coins" unique_id=1765763902]
+position = Vector2(1620, 440)
+script = ExtResource("4_65kqb")
+
+[node name="Coin16" type="Area2D" parent="Coins" unique_id=2125587655]
+position = Vector2(1680, 440)
+script = ExtResource("4_65kqb")
+
+[node name="Platforms" type="Node2D" parent="." unique_id=1007099975]
+
+[node name="Platform1" type="StaticBody2D" parent="Platforms" unique_id=1949435090]
+position = Vector2(0, 480)
+script = ExtResource("5_73vlg")
+size = Vector2(520, 60)
+
+[node name="Platform2" type="StaticBody2D" parent="Platforms" unique_id=1814957430]
+position = Vector2(600, 480)
+script = ExtResource("5_73vlg")
+size = Vector2(520, 60)
+
+[node name="Platform3" type="StaticBody2D" parent="Platforms" unique_id=1068806865]
+position = Vector2(2120, 480)
+script = ExtResource("5_73vlg")
+size = Vector2(330, 60)
+
+[node name="Platform4" type="StaticBody2D" parent="Platforms" unique_id=1747616952]
+position = Vector2(580, 400)
+script = ExtResource("5_73vlg")
+
+[node name="Platform5" type="StaticBody2D" parent="Platforms" unique_id=1054048084]
+position = Vector2(760, 340)
+script = ExtResource("5_73vlg")
+
+[node name="Moving6" type="AnimatableBody2D" parent="Platforms" unique_id=2126376642]
+position = Vector2(920, 320)
+script = ExtResource("6_ggqk7")
+distance = 190.0
+speed = 62.0
+
+[node name="Platform7" type="StaticBody2D" parent="Platforms" unique_id=461045917]
+position = Vector2(1180, 400)
+script = ExtResource("5_73vlg")
+size = Vector2(160, 18)
+
+[node name="Platform8" type="StaticBody2D" parent="Platforms" unique_id=1174715604]
+position = Vector2(1400, 330)
+script = ExtResource("5_73vlg")
+size = Vector2(150, 14)
+kind = 1
+
+[node name="Platform9" type="StaticBody2D" parent="Platforms" unique_id=1663129783]
+position = Vector2(1600, 270)
+script = ExtResource("5_73vlg")
+
+[node name="Moving10" type="AnimatableBody2D" parent="Platforms" unique_id=564526771]
+position = Vector2(1760, 320)
+script = ExtResource("6_ggqk7")
+axis = 1
+distance = 110.0
+speed = 52.0
+
+[node name="Platform11" type="StaticBody2D" parent="Platforms" unique_id=1889720078]
+position = Vector2(1940, 400)
+script = ExtResource("5_73vlg")
+size = Vector2(180, 18)
+
+[node name="Turrets" type="Node2D" parent="." unique_id=1521717747]
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=369948462]
+position = Vector2(84, 418)
+script = ExtResource("7_gy7ko")

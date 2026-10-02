@@ -1,0 +1,237 @@
+[gd_scene format=3 uid="uid://bkrk5mcwrq313"]
+
+[ext_resource type="Script" uid="uid://bn277lpukef6c" path="res://scripts/level/level.gd" id="1_1l1aq"]
+[ext_resource type="Script" uid="uid://drf260rikfdk7" path="res://scripts/level/spike.gd" id="2_b38qr"]
+[ext_resource type="Script" uid="uid://t04vqsrrooj2" path="res://scripts/level/goal.gd" id="3_ccvkr"]
+[ext_resource type="Script" uid="uid://d2rcf5222p0ew" path="res://scripts/level/coin.gd" id="4_hghyn"]
+[ext_resource type="Script" uid="uid://ctggah5rwbdxr" path="res://scripts/level/platform.gd" id="5_0isao"]
+[ext_resource type="Script" uid="uid://br70aqde2g8hr" path="res://scripts/level/moving_platform.gd" id="6_tqxnl"]
+[ext_resource type="Script" uid="uid://dtsw8s7x0ie1r" path="res://scripts/level/spawn_point.gd" id="7_52nau"]
+
+[node name="Level" type="Node2D" unique_id=1491670694]
+script = ExtResource("1_1l1aq")
+level_name = "第1关 · 云端起步"
+world_size = Vector2i(2450, 540)
+
+[node name="Spikes" type="Node2D" parent="." unique_id=734038254]
+
+[node name="Spike1" type="Area2D" parent="Spikes" unique_id=1608653605]
+position = Vector2(420, 468)
+collision_layer = 16
+collision_mask = 0
+monitoring = false
+script = ExtResource("2_b38qr")
+
+[node name="Spike1" type="Area2D" parent="Spikes/Spike1" unique_id=775587052]
+position = Vector2(414, -140)
+collision_layer = 16
+collision_mask = 0
+monitoring = false
+script = ExtResource("2_b38qr")
+
+[node name="Goal" type="Area2D" parent="." unique_id=1113143027]
+position = Vector2(2320, 396)
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+script = ExtResource("3_ccvkr")
+
+[node name="Coins" type="Node2D" parent="." unique_id=1639523872]
+
+[node name="Coin17" type="Area2D" parent="Coins" unique_id=1939379605]
+position = Vector2(454, 405)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin1" type="Area2D" parent="Coins" unique_id=1846224279]
+position = Vector2(326, 444)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin2" type="Area2D" parent="Coins" unique_id=119961644]
+position = Vector2(368, 428)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin3" type="Area2D" parent="Coins" unique_id=462276000]
+position = Vector2(620, 350)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin4" type="Area2D" parent="Coins" unique_id=1707893281]
+position = Vector2(800, 290)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin5" type="Area2D" parent="Coins" unique_id=67776675]
+position = Vector2(970, 270)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin6" type="Area2D" parent="Coins" unique_id=2114290096]
+position = Vector2(1050, 270)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin7" type="Area2D" parent="Coins" unique_id=326074539]
+position = Vector2(1240, 350)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin8" type="Area2D" parent="Coins" unique_id=970592643]
+position = Vector2(1300, 350)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin9" type="Area2D" parent="Coins" unique_id=1143239196]
+position = Vector2(1450, 280)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin10" type="Area2D" parent="Coins" unique_id=1251074413]
+position = Vector2(1520, 280)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin11" type="Area2D" parent="Coins" unique_id=1510226365]
+position = Vector2(1640, 220)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin12" type="Area2D" parent="Coins" unique_id=1706831254]
+position = Vector2(1800, 270)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin13" type="Area2D" parent="Coins" unique_id=1350897375]
+position = Vector2(1990, 350)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin14" type="Area2D" parent="Coins" unique_id=168983380]
+position = Vector2(2050, 350)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin15" type="Area2D" parent="Coins" unique_id=437531309]
+position = Vector2(1624, 449)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Coin16" type="Area2D" parent="Coins" unique_id=104257864]
+position = Vector2(1680, 440)
+collision_layer = 32
+collision_mask = 4
+monitorable = false
+script = ExtResource("4_hghyn")
+
+[node name="Platforms" type="Node2D" parent="." unique_id=1567881186]
+
+[node name="Platform1" type="StaticBody2D" parent="Platforms" unique_id=1952417721]
+position = Vector2(0, 480)
+collision_mask = 0
+script = ExtResource("5_0isao")
+size = Vector2(520, 60)
+
+[node name="Platform2" type="StaticBody2D" parent="Platforms" unique_id=1493108153]
+position = Vector2(600, 480)
+collision_mask = 0
+script = ExtResource("5_0isao")
+size = Vector2(520, 60)
+
+[node name="Platform3" type="StaticBody2D" parent="Platforms" unique_id=384715956]
+position = Vector2(2120, 480)
+collision_mask = 0
+script = ExtResource("5_0isao")
+size = Vector2(330, 60)
+
+[node name="Platform4" type="StaticBody2D" parent="Platforms" unique_id=1690501549]
+position = Vector2(580, 400)
+collision_mask = 0
+script = ExtResource("5_0isao")
+
+[node name="Platform5" type="StaticBody2D" parent="Platforms" unique_id=1232873509]
+position = Vector2(760, 340)
+collision_mask = 0
+script = ExtResource("5_0isao")
+
+[node name="Moving6" type="AnimatableBody2D" parent="Platforms" unique_id=862595353]
+position = Vector2(920, 320)
+collision_layer = 8
+collision_mask = 0
+script = ExtResource("6_tqxnl")
+distance = 190.0
+speed = 62.0
+
+[node name="Platform7" type="StaticBody2D" parent="Platforms" unique_id=1026087330]
+position = Vector2(1180, 400)
+collision_mask = 0
+script = ExtResource("5_0isao")
+size = Vector2(160, 18)
+
+[node name="Platform8" type="StaticBody2D" parent="Platforms" unique_id=2088124182]
+position = Vector2(1400, 330)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_0isao")
+size = Vector2(150, 14)
+kind = 1
+
+[node name="Platform9" type="StaticBody2D" parent="Platforms" unique_id=704573143]
+position = Vector2(1600, 270)
+collision_mask = 0
+script = ExtResource("5_0isao")
+
+[node name="Moving10" type="AnimatableBody2D" parent="Platforms" unique_id=2040380240]
+position = Vector2(1760, 320)
+collision_layer = 8
+collision_mask = 0
+script = ExtResource("6_tqxnl")
+axis = 1
+distance = 110.0
+speed = 52.0
+
+[node name="Platform11" type="StaticBody2D" parent="Platforms" unique_id=1152594566]
+position = Vector2(1940, 400)
+collision_mask = 0
+script = ExtResource("5_0isao")
+size = Vector2(180, 18)
+
+[node name="Turrets" type="Node2D" parent="." unique_id=1534353662]
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=1583607474]
+position = Vector2(84, 418)
+gizmo_extents = 6.0
+script = ExtResource("7_52nau")

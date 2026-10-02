@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="CaltropStats" format=3 uid="uid://cqclt8uw60uiu"]
+
+[ext_resource type="Script" uid="uid://cxji1harwf6re" path="res://scripts/config/caltrop_stats.gd" id="1_ri3cf"]
+
+[resource]
+script = ExtResource("1_ri3cf")
+description = "点哪投哪，落地下落吸附地形；跑者踩到掉 1 点血"

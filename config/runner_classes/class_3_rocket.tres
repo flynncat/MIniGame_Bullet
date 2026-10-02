@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RunnerClassConfig" format=3]
+
+[ext_resource type="Script" path="res://scripts/config/runner_class_config.gd" id="1_batqs"]
+
+[resource]
+script = ExtResource("1_batqs")
+display_name = "火箭兵"
+color = Color(0.49803922, 0.83137256, 1, 1)
+max_jumps = 3
+description = "三段跳，机动性最强"

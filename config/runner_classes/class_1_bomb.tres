@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RunnerClassConfig" format=3]
+
+[ext_resource type="Script" path="res://scripts/config/runner_class_config.gd" id="1_2oui3"]
+
+[resource]
+script = ExtResource("1_2oui3")
+display_name = "炸弹小队"
+color = Color(1, 0.54901963, 0.25882354, 1)
+death_ability = 1
+description = "阵亡时引爆，摧毁周围防御单位"
